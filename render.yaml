@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: english-translation-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
